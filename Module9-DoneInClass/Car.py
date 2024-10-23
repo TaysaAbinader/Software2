@@ -7,9 +7,6 @@ class Car:
 
 registration = input("Car registration number: ")
 max_speed = input("Maximum speed (Km/h): ")
-testcar = Car(registration, max_speed)
+car = Car(registration, max_speed)
 
-print(f"Car plate: {testcar.registration}")
-print(f"Maximum speed: {testcar.max_speed}")
-print(f"Current speed: {testcar.current_speed}")
-print(f"Travelled distance: {testcar.travelled_distance}")
+print(f"Car plate: {car.registration}, maximum speed: {car.max_speed}, current speed: {car.current_speed}, travelled distance: {car.travelled_distance}")

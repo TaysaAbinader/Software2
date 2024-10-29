@@ -3,8 +3,6 @@ class Elevator:
         self.bottom_floor = bottom_floor
         self.top_floor = top_floor
         self.current_floor = self.bottom_floor
-        self.elevator_id = 0
-
 
     def go_to_floor(self, floor):
         while floor != self.current_floor:

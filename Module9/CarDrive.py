@@ -6,8 +6,7 @@ class Car:
         self.travelled_distance = 2000
 
     def accelerate(self, speed_change):
-        self.speed_change = speed_change
-        self.current_speed += self.speed_change
+        self.current_speed += speed_change
         if self.current_speed > self.max_speed:
             self.current_speed = self.max_speed
         elif self.current_speed < 0:
@@ -15,7 +14,7 @@ class Car:
         return self.current_speed
 
     def drive(self, driven_hours):
-        self.travelled_distance += self.speed_change*driven_hours
+        self.travelled_distance += self.current_speed*driven_hours
         return self.travelled_distance
 
 registration = input("Registration number: ")
